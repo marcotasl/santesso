@@ -4,28 +4,24 @@ export default function Financiamento() {
   return (
     <section id="financie" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="mb-12 flex flex-col lg:flex-row items-center gap-10">
-          <div className="flex-1">
-            <p className="text-sm font-medium uppercase tracking-wider text-[var(--color-primary)] mb-2">
-              Financiamento
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-secondary)] leading-tight max-w-2xl">
-              Financie Sua Caldeira Industrial com <span className="text-[var(--color-primary)]">FINAME</span> e Caldeiras Santesso
-            </h2>
-            <p className="mt-4 text-lg text-[var(--color-gray-600)] leading-relaxed max-w-3xl">
-              A Caldeiras Santesso, em parceria com o BNDES e o programa FINAME,
-              oferecem uma oportunidade única para que sua empresa adquira
-              caldeiras industriais de alta qualidade com condições especiais de
-              financiamento.
-            </p>
-          </div>
-          <div className="flex-shrink-0">
-            <img
-              src="/images/bndes-logo.png"
-              alt="BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
-              className="w-64 lg:w-80 h-auto object-contain"
-            />
-          </div>
+        <div className="mb-12">
+          <img
+            src="/images/bndes-logo.png"
+            alt="BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
+            className="w-32 h-auto object-contain mb-6"
+          />
+          <p className="text-sm font-medium uppercase tracking-wider text-[var(--color-primary)] mb-2">
+            Financiamento
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-secondary)] leading-tight max-w-2xl">
+            Financie Sua Caldeira Industrial com <span className="text-[var(--color-primary)]">FINAME</span> e Caldeiras Santesso
+          </h2>
+          <p className="mt-4 text-lg text-[var(--color-gray-600)] leading-relaxed max-w-3xl">
+            A Caldeiras Santesso, em parceria com o BNDES e o programa FINAME,
+            oferecem uma oportunidade única para que sua empresa adquira
+            caldeiras industriais de alta qualidade com condições especiais de
+            financiamento.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -76,7 +72,7 @@ export default function Financiamento() {
           href={WHATSAPP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-shine inline-flex items-center gap-2 rounded-full bg-[var(--color-primary)] px-8 py-4 text-base font-semibold text-white hover:bg-[var(--color-primary-dark)] transition-colors"
+          className="btn-shine hidden md:inline-flex items-center gap-2 rounded-full bg-[var(--color-primary)] px-8 py-4 text-base font-semibold text-white hover:bg-[var(--color-primary-dark)] transition-colors"
         >
           Consultar Financiamento
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
