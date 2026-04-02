@@ -5,35 +5,33 @@ export default function Sobre() {
     <section id="santesso" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <div className="rounded-2xl overflow-hidden">
-              <Image
-                src="/images/fachada.webp"
-                alt="Fachada da Caldeiras Santesso"
-                width={459}
-                height={396}
-                className="w-full h-auto"
-              />
-            </div>
+          <div className="rounded-2xl overflow-hidden">
+            <Image
+              src="/images/fachada.webp"
+              alt="Fachada da Caldeiras Santesso"
+              width={459}
+              height={396}
+              className="w-full h-auto"
+            />
           </div>
 
           <div>
             <p className="text-sm font-medium uppercase tracking-wider text-[var(--color-primary)] mb-2">
-              Sobre a Empresa
+              Desde 1977
             </p>
             <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-secondary)] leading-tight">
-              Toda jornada de sucesso, tem um começo
+              Toda jornada de <span className="text-[var(--color-primary)]">sucesso</span>, tem um começo
             </h2>
 
             <p className="mt-6 text-lg text-[var(--color-gray-600)] leading-relaxed">
               A Caldeiras Santesso, fundada em 1977, é especializada na
-              fabricação e instalação de Caldeiras geradoras de vapor, de vários
+              fabricação e instalação de <span className="font-semibold text-[var(--color-secondary)]">Caldeiras geradoras de vapor</span>, de vários
               modelos, direcionadas para os múltiplos setores industriais.
             </p>
 
             <p className="mt-4 text-lg text-[var(--color-gray-600)] leading-relaxed">
-              Nossa experiência de 45 anos atuando no mercado, visa acima de
-              tudo a Qualidade e Segurança de nossos equipamentos.
+              Nossa experiência de <span className="font-semibold text-[var(--color-primary)]">mais de 47 anos</span> atuando no mercado, visa acima de
+              tudo a <span className="font-semibold text-[var(--color-secondary)]">Qualidade e Segurança</span> de nossos equipamentos.
             </p>
 
             <div className="mt-8 space-y-4">
