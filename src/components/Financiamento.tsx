@@ -1,5 +1,3 @@
-const WHATSAPP_URL = "https://wp.faleconosco.chat/6ba943211";
-
 export default function Financiamento() {
   return (
     <section id="financie" className="py-20 bg-white">
@@ -67,18 +65,6 @@ export default function Financiamento() {
             </p>
           </div>
         </div>
-
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-shine hidden md:inline-flex items-center gap-2 rounded-full bg-[var(--color-primary)] px-8 py-4 text-base font-semibold text-white hover:bg-[var(--color-primary-dark)] transition-colors"
-        >
-          Consultar Financiamento
-          <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </a>
       </div>
     </section>
   );
