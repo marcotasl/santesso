@@ -1,7 +1,7 @@
 const clientes = [
   "Laticínio Cajes",
   "Laticínio Ki Sabor",
-  "Agroilma",
+  "Agrolima",
   "Alhesco",
   "Carfil Pneus",
   "Total Pneus",
