@@ -14,9 +14,88 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import FadeIn from "@/components/FadeIn";
 import CTABanner from "@/components/CTABanner";
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Caldeiras Santesso",
+  legalName: "RS Caldeiras Indústria e Comércio Eireli",
+  url: "https://santesso.vercel.app",
+  logo: "https://santesso.vercel.app/images/logo-dark.svg",
+  description:
+    "Especialistas na fabricação de caldeiras geradoras de vapor a lenha, com mais de 47 anos de excelência no mercado.",
+  foundingDate: "1977",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Aparecida de Goiânia",
+    addressRegion: "GO",
+    postalCode: "74911-265",
+    addressCountry: "BR",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "sales",
+    availableLanguage: "Portuguese",
+  },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Qual é o prazo de garantia da caldeira?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nossas caldeiras possuem garantia de 12 meses contra defeitos de fabricação, contados a partir da emissão da nota fiscal ou do início da operação (o que ocorrer primeiro).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "A montagem da caldeira está inclusa?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sim, oferecemos o serviço de montagem da caldeira sem custo adicional.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Qual é o prazo de entrega?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "O prazo de entrega é definido em contrato, conforme programação de produção e data acordada.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Como funciona a assistência técnica?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Disponibilizamos assistência técnica em dias úteis, conforme o tempo de deslocamento até o local.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Quem é responsável pelo transporte da caldeira?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "O transporte, seguro e serviço de guincho são de responsabilidade do comprador (FOB).",
+      },
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <Header />
       <main>
         <Hero />

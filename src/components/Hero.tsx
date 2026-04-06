@@ -88,6 +88,7 @@ export default function Hero() {
                 alt="Caldeira industrial Santesso"
                 width={420}
                 height={530}
+                sizes="(max-width: 640px) 280px, (max-width: 1024px) 350px, 420px"
                 className="rounded-2xl shadow-2xl w-full max-w-[280px] sm:max-w-[350px] lg:max-w-[420px]"
                 priority
               />

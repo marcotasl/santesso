@@ -11,6 +11,7 @@ export default function Sobre() {
               alt="Fachada da Caldeiras Santesso"
               width={459}
               height={396}
+              sizes="(max-width: 1024px) 100vw, 50vw"
               className="w-full h-auto"
             />
           </div>

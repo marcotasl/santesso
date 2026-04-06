@@ -24,6 +24,7 @@ function ImageStrip() {
             alt={slide.alt}
             width={500}
             height={400}
+            sizes="(max-width: 640px) 280px, (max-width: 1024px) 360px, 500px"
             className="h-full w-auto object-contain"
           />
         </div>

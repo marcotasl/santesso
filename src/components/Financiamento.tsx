@@ -1,12 +1,16 @@
+import Image from "next/image";
+
 export default function Financiamento() {
   return (
     <section id="financie" className="py-20 bg-white">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-12">
-          <img
+          <Image
             src="/images/bndes-logo.png"
             alt="BNDES - Banco Nacional de Desenvolvimento Econômico e Social"
-            className="w-32 h-auto object-contain mb-6"
+            width={128}
+            height={40}
+            className="h-auto object-contain mb-6"
           />
           <p className="text-sm font-medium uppercase tracking-wider text-[var(--color-primary)] mb-2">
             Financiamento

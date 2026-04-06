@@ -84,6 +84,7 @@ export default function Depoimentos() {
                 alt={dep.alt}
                 width={363}
                 height={467}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 className="w-full h-auto"
               />
             </div>
