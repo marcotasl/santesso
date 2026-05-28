@@ -1,6 +1,6 @@
 "use client";
 
-const WHATSAPP_URL = "https://wp.faleconosco.chat/6ba943211";
+import { WHATSAPP_URL } from "@/lib/links";
 
 export default function WhatsAppButton() {
   return (

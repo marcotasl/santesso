@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { WHATSAPP_URL } from "@/lib/links";
 
 const navLinks = [
   { label: "Diferenciais", href: "#diferenciais" },
@@ -9,8 +10,6 @@ const navLinks = [
   { label: "Clientes", href: "#clientes" },
   { label: "A Santesso", href: "#santesso" },
 ];
-
-const WHATSAPP_URL = "https://wp.faleconosco.chat/6ba943211";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
