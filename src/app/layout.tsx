@@ -64,6 +64,39 @@ export default function RootLayout({
           type="text/css"
           href="https://app.datalitics.com.br/styles/styles.min.css"
         />
+        {/* Rastreamento WhatsApp — CRM Impulso: propaga gclid/wbraid/gbraid e UTMs pros links de WhatsApp */}
+        <Script
+          id="crm-impulso-wa"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(){
+  var p=new URLSearchParams(location.search);
+  var g=p.get('gclid'),w=p.get('wbraid'),b=p.get('gbraid');
+  var us=p.get('utm_source'),um=p.get('utm_medium'),uc=p.get('utm_campaign'),ut=p.get('utm_term');
+  if(!g&&!w&&!b&&!us)return;
+  var q='';
+  if(g)q='gclid='+encodeURIComponent(g);
+  if(w)q+=(q?'&':'')+'wbraid='+encodeURIComponent(w);
+  if(b)q+=(q?'&':'')+'gbraid='+encodeURIComponent(b);
+  if(us)q+=(q?'&':'')+'utm_source='+encodeURIComponent(us);
+  if(um)q+=(q?'&':'')+'utm_medium='+encodeURIComponent(um);
+  if(uc)q+=(q?'&':'')+'utm_campaign='+encodeURIComponent(uc);
+  if(ut)q+=(q?'&':'')+'utm_term='+encodeURIComponent(ut);
+  function inject(){
+    document.querySelectorAll('a[href*="wa.me"],a[href*="whatsapp"],a[href*="/r/wa/"],a[href*="/api/w/"]').forEach(function(el){
+      if(el.href.indexOf('?'+q)<0&&el.href.indexOf('&'+q)<0){
+        if(el.href.indexOf('/api/w/')>-1){
+          el.href=el.href+(el.href.indexOf('?')>-1?'&':'?')+q;
+        } else {
+          el.href='https://plataforma.marketingimpulso.com/r/wa/santesso?'+q;
+        }
+      }
+    });
+  }
+  window.addEventListener('load',function(){ inject(); setTimeout(inject,1000); });
+})();`,
+          }}
+        />
       </head>
       <body>
         <noscript>
